@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="main_page.html" name="enter" method="post">
+                <input type="password" id="text" name="text" class="text" placeholder="make a review(text)" required/>
+                <button type="submit" class="Button">Submit</button>
+</form>
+<form action="main_page.html" name="enter" method="post">
+                <input type="text" id="id" name="id" class="id" placeholder="delete review(id_user)">
+                <button type="submit" class="Button">Submit</button>
+</form>
+            <a><p>Id_Review/Id_User/Text</p></a>
+{% for i in range(lens)%}
+
+            <a><p>{{reviews[i][0]}}/{{reviews[i][1]}}/{{reviews[i][2]}}</p></a>
+{% endfor %}
+</body>
+</html>
